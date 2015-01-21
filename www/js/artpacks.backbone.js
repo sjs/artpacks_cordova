@@ -72,6 +72,10 @@ App.Router = Backbone.Router.extend({
 
                     document.title = App.name;
                     breadcrumbs(data);
+                    window.analytics.trackView('index',
+                        function(success){ console.log(success); },
+                        function(error){ console.log(error); }
+                    );
                     App.homeView.render(data);
 
                     $('#content').html(App.homeView.$el);
@@ -100,6 +104,10 @@ App.Router = Backbone.Router.extend({
 
                     document.title = 'Artpacks.org\\'+year+'\\';
                     breadcrumbs(data, year);
+                    window.analytics.trackView(year,
+                        function(success){ console.log(success); },
+                        function(error){ console.log(error); }
+                    );
                     App.yearView.render(data);
 
                     $('#content').html(App.yearView.$el);
@@ -130,6 +138,10 @@ App.Router = Backbone.Router.extend({
 
                     document.title = 'Artpacks.org\\'+year+'\\'+pack+'\\';
                     breadcrumbs(data, year, pack);
+                    window.analytics.trackView(year+'/'+pack,
+                        function(success){ console.log(success); },
+                        function(error){ console.log(error); }
+                    );
                     App.packView.render(data);
 
                     $('#content').html(App.packView.$el);
@@ -158,6 +170,10 @@ App.Router = Backbone.Router.extend({
 
                     document.title = 'Artpacks.org\\'+year+'\\'+pack+'\\'+art;
                     breadcrumbs(data, year, pack, art);
+                    window.analytics.trackView(year+'/'+pack+'/'+art,
+                        function(success){ console.log(success); },
+                        function(error){ console.log(error); }
+                    );
                     App.artView.render(data, year, pack, art);
 
                     $('#content').html(App.artView.$el);
@@ -299,7 +315,7 @@ App.ArtView = Backbone.View.extend({
             }, 25, display_settings);
         }
 
-        if(mc) { mc.off("swipeleft swiperight tap press"); console.log('mc off'); }
+        if(mc) { mc.off("swipeleft swiperight tap press"); }
 
         content_area = document.getElementById('body');
         mc = new Hammer(content_area);
