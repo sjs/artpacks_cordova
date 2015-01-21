@@ -8,7 +8,6 @@ var cordova_app = {
     },
     onDeviceReady: function() {
         window.analytics.startTrackerWithId('UA-24934324-2');
-        window.analytics.debugMode();
         App.init();
         App.router.navigate('', {trigger: true});
     },

@@ -1,6 +1,9 @@
 # Mac
 .DS_Store
 
+# Keys
+playwithvoodoo.keystore
+
 # Node
 npm-debug.log
 /node_modules
