@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.artpacks" version="2.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>ANSI &amp; ASCII Art</name>
+    <description>
+        An updated and historical archive of ANSI and ASCII art, from 1990 to present. Brought to you by Artpacks.org.
+    </description>
+    <author email="info@playwithvoodoo.com" href="http://playwithvoodoo.com">
+        Artpacks.org
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

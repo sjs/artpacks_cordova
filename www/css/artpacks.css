@@ -1,0 +1,321 @@
+/* Fonts
+-------------------------------------------------- */
+@font-face {
+    font-family: 'Conv_Perfect DOS VGA 437';
+    src:  url('../fonts/Perfect DOS VGA 437.eot');
+    src:  url('../fonts/Perfect DOS VGA 437.woff') format('woff'),
+          url('../fonts/Perfect DOS VGA 437.ttf') format('truetype'),
+          url('../fonts/Perfect DOS VGA 437.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Global Layout
+-------------------------------------------------- */
+*::-webkit-scrollbar { width: 0 !important }
+*  { -ms-overflow-style: none; overflow: -moz-scrollbars-none; }
+body { 
+    background: #aaaaaa;
+    color:#000;
+    font-family: 'Conv_Perfect DOS VGA 437', sans-serif;
+    padding-top: 70px;
+    font-size:18px;
+    overflow:hidden;
+    width:100%; min-height:100%;
+}
+body.artwork {
+    background:#000000;
+    overflow:scroll;
+    width:100%; height:auto;
+}
+
+#content {
+    position:absolute;
+    top:0px; left:0px;
+    width:100%; height:100%;
+    padding-top:4em;
+    padding-bottom:3em;
+    overflow:scroll;
+    -ms-overflow-style: none; overflow: -moz-scrollbars-none;
+}
+
+h1,h2,h3,h4 { font-size:1em; margin:0px 0px 1em 0px; text-align:center; line-height:1em; }
+
+p { margin:0px 0px 1em 0px; padding:0em 1em; line-height:1em; }
+
+.year-container { height:3em; }
+
+
+/* Navbar
+-------------------------------------------------- */
+.navbar-default                         { background:#ffffff; }
+.navbar-default .navbar-brand           { color:#AAAAAA; vertical-align:middle; font-size:16px; line-height:24px; white-space:nowrap; }
+.navbar-default .navbar-brand a         { color:#000000; } 
+.navbar-default .navbar-nav > li > a    { color:#000000; }
+
+
+/* List Group
+-------------------------------------------------- */
+.list-group-item {
+    background-color:transparent;
+    position:relative;
+    text-align:left;
+    border:0px;
+    padding:0.5em 3em 0.5em 1em;
+    white-space:nowrap;
+    border-radius:0 !important;
+}
+.list-group-item span {
+    white-space:nowrap;
+    text-overflow:"~";
+    display:block;
+    overflow:hidden;
+    width:100%;
+    padding-right:3em;
+}
+.list-group-item:after {
+    content: '>';
+    position:absolute; top:0.5em; right:1em;
+}
+a.list-group-item:hover {
+    background:rgb(170,0,170);
+    color:#ffffff;
+}
+
+.no-touch .has-cursor { background:rgb(170,0,170) !important; color:#ffffff !important; }
+
+
+/* Buttons
+-------------------------------------------------- */
+.btn-dos-default {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    display:block;
+    padding:0px;
+    height:2em; width:100%;
+    box-shadow:0px 0px 0px transparent;
+    overflow:visible;
+    color: #000000;
+    background: #ffffff;
+    display: block;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    -webkit-border-radius:  0;
+    -moz-border-radius:     0;
+    border-radius:          0;
+    -webkit-box-shadow: 0.5em 0.5em 0 #555555;
+    -moz-box-shadow:    0.5em 0.5em 0 #555555;
+    box-shadow:         0.5em 0.5em 0 #555555;
+}
+.btn-dos-default:hover {
+    background-color:rgb(170,0,170);
+    color:#ffffff;
+}
+.btn-dos-default:active {
+    margin: 10px -10px -10px 10px;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+.btn-dos-success {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    display:block;
+    padding:0px;
+    height:2em; width:100%;
+    box-shadow:0px 0px 0px transparent;
+    overflow:visible;
+    background: rgb(0,170,0);
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    -webkit-border-radius:  0;
+    -moz-border-radius:     0;
+    border-radius:          0;
+    -webkit-box-shadow: 0.5em 0.5em 0 #555555;
+    -moz-box-shadow:    0.5em 0.5em 0 #555555;
+    box-shadow:         0.5em 0.5em 0 #555555;
+}
+.btn-dos-success:hover {
+    background-color:rgb(85, 255, 85);
+    color:#000000;
+}
+.btn-dos-success:focus, 
+.btn-dos-success:active {
+    background-color:rgb(85, 255, 85);
+    color:#000000;
+    margin: 10px -10px -10px 10px;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0; 
+}
+
+.btn-dos-grey {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 1em;
+    display:block;
+    padding:0px;
+    height:2em; width:100%;
+    box-shadow:0px 0px 0px transparent;
+    overflow:visible;
+    background: rgb(170,170,170);
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    -webkit-border-radius:  0;
+    -moz-border-radius:     0;
+    border-radius:          0;
+    -webkit-box-shadow: 0.5em 0.5em 0 #555555;
+    -moz-box-shadow:    0.5em 0.5em 0 #555555;
+    box-shadow:         0.5em 0.5em 0 #555555;
+}
+.btn-dos-grey:hover {
+    background-color:rgb(85, 85, 85);
+    color:#ffffff;
+}
+.btn-dos-grey:focus,
+.btn-dos-grey:active {
+    background-color:rgb(85, 85, 85);
+    color:#ffffff;
+    margin: 10px -10px -10px 10px;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0;
+    -moz-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+
+
+
+/* Well
+-------------------------------------------------- */
+.well {
+    color: #000000;
+    background: #ffffff;
+    display: block;
+    color: #000000;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    padding:1em 0px;
+    -webkit-border-radius:  0;  
+    -moz-border-radius:     0;  
+    border-radius:          0;  
+    -webkit-box-shadow: 0.5em 0.5em 0 #555555;
+    -moz-box-shadow:    0.5em 0.5em 0 #555555;
+    box-shadow:         0.5em 0.5em 0 #555555;
+}
+
+
+/* Forms
+-------------------------------------------------- */
+.form-group {
+    margin: 0.5em 0px;
+    line-height:1em;
+}
+.control-label {
+    height:2em;
+    line-height:2em;
+    font-weight:normal;
+}
+.form-control {
+display: block;
+width: 100%;
+height: 2em;
+padding: 0 0.5em;
+font-size: 1em;
+line-height: 2em;
+color: #ffffff;
+background-color: #aaa;
+background-image: none;
+border: 0px solid #ccc;
+border-radius: 0px;
+-webkit-box-shadow: none;
+-moz-box-shadow:    none;
+box-shadow:         none;
+outline:none !important;
+}
+select { outline:0px !important; }
+select:focus { outline:0px !important; }
+select:active { outline:0px !important; }
+
+/* Modal
+ -------------------------------------------------- */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 1em;
+}
+.modal-content {
+    color: #000000;
+    background: #ffffff;
+    display: block;
+    color: #000000;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 0;
+    padding:0px;
+    -webkit-border-radius:  0;  
+    -moz-border-radius:     0;  
+    border-radius:          0;  
+    -webkit-box-shadow: 0.5em 0.5em 0 #555555;
+    -moz-box-shadow:    0.5em 0.5em 0 #555555;
+    box-shadow:         0.5em 0.5em 0 #555555;
+}
+.modal-header {
+    min-height: none;
+    padding: 1em 1em 1em;
+    border-bottom: 0px solid #e5e5e5;
+}
+.modal-title { line-height:1em; padding:0; }
+.modal-body {
+    position: relative;
+    padding: 0.5em 1em;
+}
+.modal-footer {
+    padding: 0.5em 1em;
+    text-align: right;
+    border-top: 0px solid #e5e5e5;
+}
+
+
+/* Artwork
+-------------------------------------------------- */
+#artwork {
+text-align: center;
+position: absolute;
+overflow: scroll;
+padding-top: 3em;
+min-height: 100%;
+width: 100%;
+box-sizing: inherit;
+top: 0px;
+margin:0 auto;
+color:#ffffff;
+}
+#artwork > * { display:block; margin:0 auto; image-rendering: -moz-crisp-edges; image-rendering: -webkit-optimize-contrast; }
+#artwork::-webkit-scrollbar { width: 0 !important }
+
+#artwork.takedown { padding-top:5em; color:#ffffff; }
+#artwork.takedown > a { display:inline; }
+
+
+#artwork p { color:#aaaaaa; font-size:1em; margin-top:1em; }
+#artwork p i { font-size:8em; margin-bottom:0.125em; }
+#artwork.fit-width > * { max-width:100%; }
+#artwork.full-width > * { max-width:none; }
